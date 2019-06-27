@@ -1,0 +1,84 @@
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+}
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+
+    /*Sometimes, in animations, the animations is shaky. To fix: */
+    backface-visibility:hidden;
+    margin-bottom:6rem;
+
+    &--main{
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        
+         /*
+            delays animation
+            animation-delay:3s;
+
+            amount of times animation happens
+            animation-iteration-count: 3;
+
+            changes the timing during animation, 
+            ex: slow first, then fast over the given duration
+            animation-timing-function: ease-in
+            */
+
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    &--sub{
+        display:block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75 rem;
+        animation: moveInRight 1s ease-out;
+        
+    }
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    //Adds gradient to font
+    display:inline-block;   //Makes the gradient occupy only where the text is
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+
+    //clips bacground image to behind text only
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary{
+    font-size:$default-font-size;
+    font-weight:700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size:$default-font-size;
+
+    //last child, no margin
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}

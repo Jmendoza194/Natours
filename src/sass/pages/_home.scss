@@ -1,0 +1,39 @@
+.section-about{
+    background-color: $color-grey-light;
+    padding: 25rem 0;
+    margin-top: -20vh;
+}
+
+.section-features{
+    padding:20rem 0;
+    background-image: linear-gradient(
+        to right, 
+        rgba($color-primary-light,0.8),
+        rgba($color-primary-dark,0.8)),
+        url(../img/nat-4.jpg);
+        background-size: cover;
+
+    //Another way to skew background image
+    transform: skewY(-7deg);
+
+    //Want to move the green background to cover the white space not covered when skewed
+    margin-top: -10rem;
+
+    //Direct Child Selector
+    //Css version: .section-features > *, selects the first child it comes across
+    & > * {
+        transform:skewY(7deg);
+    }
+}
+
+.section-tours{
+    background-color: $color-grey-light;
+    padding: 25rem 0 15rem 0;
+    margin-top: -20vh;
+    margin-top:-10rem;
+}
+
+.section-stories{
+    padding: 15rem 0;
+    background-color: $color-grey-light;
+}
