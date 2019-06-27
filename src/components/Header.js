@@ -15,7 +15,7 @@ class Header extends React.Component{
                             <span className="heading-primary--sub">{this.props.subTitle}</span>
                         </h1>
 
-                        <a className="btn btn--white btn--animated">{this.props.btnText}</a>
+                        <a href="#"className="btn btn--white btn--animated">{this.props.btnText}</a>
                     </div>
                 </header>
             </div>
