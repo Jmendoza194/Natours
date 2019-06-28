@@ -11,6 +11,8 @@ import pic2 from "../img/nat-2-large.jpg";
 import pic3 from "../img/nat-3-large.jpg";
 import pic4 from "../img/nat-8.jpg";
 import pic5 from "../img/nat-9.jpg";
+import bgVideoMp4 from "../img/video.mp4";
+import bgVideoWebM from "../img/video.webM";
 
 class App extends React.Component{
     render(){
@@ -70,10 +72,14 @@ class App extends React.Component{
                         name2="Jack Wilson"
                         pic1={pic4}
                         pic2={pic5}
+                        bgVideoMp4={bgVideoMp4}
+                        bgVideoWebM={bgVideoWebM}
                         title1="I had the best week with my family"
                         title2="WOW! My life is completely different now"
                         description1="Incididunt ut consectetur et culpa aute aliqua adipisicing fugiat in laborum excepteur minim nostrud. Incididunt esse ad qui sunt anim aliquip. Proident nostrud enim excepteur aliqua sunt qui magna. Id mollit culpa quis non laboris sint sit cillum. Ipsum consectetur mollit cupidatat sunt consequat nulla. Duis aliqua magna non eiusmod occaecat amet enim est quis Lorem esse pariatur."
                         description2="Duis commodo cupidatat nulla laborum qui enim laborum esse sit do elit. Dolor tempor ad irure do non. Dolor irure pariatur incididunt aliqua. Exercitation magna id aute et."
+                        
+                        
                     />
                     
 
